@@ -21,48 +21,48 @@
 			text-decoration:none;
 		}
 		.div1 {   
-	        position:absolute;          
-		    top:50%;                    
+	                position:absolute;          
+		        top:50%;                    
 			left:50%;                     
 			margin-left:-740px;
 			margin-top:-300px;
 		}
 		.div2 {
-            font-size:20px;
-            height:30px;
-        }
-        .div3 {
-        	color:#4e7ca1;
-        	font-weight:bold;
-        	height:30px;
-        }
+                        font-size:20px;
+                        height:30px;
+                }
+                .div3 {
+        	        color:#4e7ca1;
+        	        font-weight:bold;
+        	        height:30px;
+                }
 		.div4 {
-            margin:0 auto;
-            width:100px;
-            height:30px;
-            border:2px solid #47484c;
-            border-radius:30px;
-            text-align: center;
-            line-height: 30px;
-        }
-        .div5 {
-        	position:absolute;
-        	top:70%;
-        	left:50%;
-        	margin-left:-115px;
-        }   
+                        margin:0 auto;
+                        width:100px;
+                        height:30px;
+                        border:2px solid #47484c;
+                        border-radius:30px;
+                        text-align:center;
+                        line-height:30px;
+                }
+                .div5 {
+        	        position:absolute;
+        	        top:70%;
+        	        left:50%;
+        	        margin-left:-115px;
+                }   
 	</style>
 </head>
 <body style="text-align:center">
 	<h2>Crawler Display</h2>
 	<div class="div1">
 	<?php foreach($display as $data): ?>
-	<div style="float:left;margin:10px 40px 10px 40px">
-		<div class="div2"><?=$data['name'] ?><br></div>
-		<div class="div3"><?=$data['brief'] ?><br></div>
-		<img src="<?=$data['imgpath'] ?>" style="border:3px solid #c0c4c3"><br><br>
-		<div class="div4"><a href="<?=$data['readpath'] ?>"><b>开始阅读</b></a></div>
-	</div>
+	    <div style="float:left;margin:10px 40px 10px 40px">
+	    <div class="div2"><?=$data['name'] ?><br></div>
+	    <div class="div3"><?=$data['brief'] ?><br></div>
+	    <img src="<?=$data['imgpath'] ?>" style="border:3px solid #c0c4c3"><br><br>
+	    <div class="div4"><a href="<?=$data['readpath'] ?>"><b>开始阅读</b></a></div>
+	    </div>
 	<?php endforeach;?>
 	</div>
 	<div class="div5"><?=$pageinfo ?></div>
